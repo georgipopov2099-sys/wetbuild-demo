@@ -158,7 +158,12 @@ h1 {
 }
 
 h1 span {
-    color: #777;
+    color: var(--dark);
+    background-image: linear-gradient(var(--accent), var(--accent));
+    background-repeat: no-repeat;
+    background-size: 100% 38%;
+    background-position: 0 85%;
+    padding: 0 2px;
 }
 
 .hero-text {
