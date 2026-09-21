@@ -772,6 +772,13 @@ h1 span {
     font-size: 13px;
 }
 
+.price-secondary {
+    margin-top: -20px;
+    margin-bottom: 12px;
+    color: #999;
+    font-size: 12px;
+}
+
 .price-card ul {
     display: flex;
     flex-direction: column;
