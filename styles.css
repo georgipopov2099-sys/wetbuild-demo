@@ -73,14 +73,32 @@ button {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-family: "Space Grotesk", sans-serif;
     font-size: 25px;
     font-weight: 700;
     letter-spacing: -1.4px;
 }
 
-.logo span {
-    color: #777;
+.logo-icon {
+    position: relative;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    background: var(--dark);
+}
+
+.logo-icon-dot {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    background: var(--accent);
 }
 
 .desktop-nav {
@@ -1310,5 +1328,67 @@ footer {
 
     .footer-links {
         flex-wrap: wrap;
+    }
+}
+
+/* =========================
+   SCROLL REVEAL
+========================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .6s ease-out, transform .6s ease-out;
+}
+
+.reveal.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+/* =========================
+   MAGNETIC BUTTONS + CUSTOM CURSOR
+   (mouse-only devices — untouched on touch/mobile)
+========================= */
+
+@media (hover: hover) and (pointer: fine) {
+
+    body,
+    a,
+    button,
+    summary {
+        cursor: none;
+    }
+
+    .custom-cursor {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: var(--accent-dark);
+        pointer-events: none;
+        z-index: 9999;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1);
+        transition: transform .15s ease-out, opacity .2s ease;
+    }
+
+    .custom-cursor.cursor-active {
+        opacity: 1;
+    }
+
+    .custom-cursor.cursor-hover {
+        transform: translate(-50%, -50%) scale(1.8);
+        opacity: .7;
     }
 }

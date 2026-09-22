@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Ресторант Тополите — speculative redesign / pitch demo от WetBuild. Всички данни, снимки и текстове са placeholder и предстои да бъдат заменени с реалните на заведението."
+    >
+
+    <title>Тополите — Вечер под тополите (pitch demo)</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--
+    PITCH DEMO бележка за екипа на WetBuild:
+    Това е speculative redesign на topolite.eu, показван на собствениците
+    като визия за нов сайт. Всичко маркирано с "placeholder" / "предстои"
+    трябва да се замени с реални данни, снимки, лого и меню, предоставени
+    от заведението, преди сайтът да бъде публикуван някъде реално.
+-->
+
+<header class="header">
+    <a href="#hero" class="logo">Тополите</a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Отвори меню" aria-expanded="false" aria-controls="overlayNav">
+        <span></span><span></span><span></span>
+    </button>
+</header>
+
+<nav class="overlay-nav" id="overlayNav" aria-label="Основна навигация">
+    <a href="#menu">Меню</a>
+    <a href="#gallery">Галерия</a>
+    <a href="#about">За нас</a>
+    <a href="#contact">Контакти</a>
+    <a href="#contact" class="button primary overlay-cta">Резервирай маса</a>
+</nav>
+
+
+<main>
+
+<!-- HERO — full-bleed, заглавието offset долу-вляво върху снимката -->
+<section class="hero" id="hero">
+
+    <div class="hero-media">
+        <img
+            src="images/hero-garden-evening.jpg"
+            alt="Вечерна градина на ресторант Тополите с топла светлина на лампите, зелени чадъри и подредени маси"
+            loading="eager"
+        >
+    </div>
+    <div class="hero-scrim" aria-hidden="true"></div>
+
+    <div class="hero-overlay reveal">
+
+        <div class="logo-mark">
+            <img src="images/logo.png" alt="Лого на ресторант Тополите — Food &amp; Wine Restaurant">
+        </div>
+
+        <h1>
+            Вечер
+            <span>под тополите.</span>
+        </h1>
+
+        <p class="hero-text">
+            Градина, топла светлина и вечери, в които времето минава
+            бавно. Тополите е място за спокойна вечеря сред дървета —
+            далеч от градския шум.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#contact" class="button primary">
+                Резервирай маса
+                <span>→</span>
+            </a>
+            <a href="#menu" class="button secondary">Виж менюто</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ВИНО — акцент веднага след hero-а -->
+<section class="wine-feature" id="wine">
+    <div class="wine-feature-grid">
+
+        <div class="wine-feature-media reveal">
+            <img
+                src="images/wine-cellar.jpg"
+                alt="Винена изба на Тополите с рафтове, пълни със стотици етикети вино"
+                loading="lazy"
+            >
+        </div>
+
+        <div class="wine-feature-content reveal">
+            <span class="tag">Food &amp; Wine</span>
+            <h2>Избрана винена изба</h2>
+            <p>
+                Тополите е толкова за виното, колкото и за кухнята. Стотици
+                етикети, подбрани с грижа — от познати класики до по-редки
+                находки — за да намерите точното вино към вечерята си.
+            </p>
+
+            <div class="wine-feature-secondary">
+                <img
+                    src="images/wine-chilling-barrel.jpg"
+                    alt="Бутилки шампанско в кофа с лед върху винена бъчва в градината"
+                    loading="lazy"
+                >
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- МЕНЮ — печатен вертикален списък, без карти и табове -->
+<section class="section" id="menu">
+    <div class="container">
+
+        <h2 class="reveal">Меню</h2>
+        <p class="section-lead reveal">
+            Структурата по-долу е примерна. Категориите и артикулите ще
+            бъдат заменени с реалното меню на заведението.
+        </p>
+
+        <div class="menu-category reveal">
+            <h3 class="menu-category-label">Предястия</h3>
+
+            <div class="menu-row">
+                <div class="menu-row-top">
+                    <h4><span class="tag">Очаква меню</span> Артикул от менюто</h4>
+                    <span class="menu-price"><span class="price-eur">0€</span><span class="price-bgn">0 лв.</span></span>
+                </div>
+                <p>Описанието на ястието ще бъде добавено след предоставяне на реалното меню.</p>
+            </div>
+
+            <div class="menu-row">
+                <div class="menu-row-top">
+                    <h4><span class="tag">Очаква меню</span> Артикул от менюто</h4>
+                    <span class="menu-price"><span class="price-eur">0€</span><span class="price-bgn">0 лв.</span></span>
+                </div>
+                <p>Описанието на ястието ще бъде добавено след предоставяне на реалното меню.</p>
+            </div>
+        </div>
+
+        <div class="menu-category reveal">
+            <h3 class="menu-category-label">Основни ястия</h3>
+
+            <div class="menu-row">
+                <div class="menu-row-top">
+                    <h4><span class="tag">Очаква меню</span> Артикул от менюто</h4>
+                    <span class="menu-price"><span class="price-eur">0€</span><span class="price-bgn">0 лв.</span></span>
+                </div>
+                <p>Описанието на ястието ще бъде добавено след предоставяне на реалното меню.</p>
+            </div>
+
+            <div class="menu-row">
+                <div class="menu-row-top">
+                    <h4><span class="tag">Очаква меню</span> Артикул от менюто</h4>
+                    <span class="menu-price"><span class="price-eur">0€</span><span class="price-bgn">0 лв.</span></span>
+                </div>
+                <p>Описанието на ястието ще бъде добавено след предоставяне на реалното меню.</p>
+            </div>
+        </div>
+
+        <div class="menu-category reveal">
+            <h3 class="menu-category-label">Десерти</h3>
+
+            <div class="menu-row">
+                <div class="menu-row-top">
+                    <h4><span class="tag">Очаква меню</span> Артикул от менюто</h4>
+                    <span class="menu-price"><span class="price-eur">0€</span><span class="price-bgn">0 лв.</span></span>
+                </div>
+                <p>Описанието на ястието ще бъде добавено след предоставяне на реалното меню.</p>
+            </div>
+
+            <div class="menu-row">
+                <div class="menu-row-top">
+                    <h4><span class="tag">Очаква меню</span> Артикул от менюто</h4>
+                    <span class="menu-price"><span class="price-eur">0€</span><span class="price-bgn">0 лв.</span></span>
+                </div>
+                <p>Описанието на ястието ще бъде добавено след предоставяне на реалното меню.</p>
+            </div>
+        </div>
+
+        <div class="menu-category reveal">
+            <h3 class="menu-category-label">Вино</h3>
+
+            <div class="menu-row">
+                <div class="menu-row-top">
+                    <h4><span class="tag">Очаква меню</span> Артикул от винената листа</h4>
+                    <span class="menu-price"><span class="price-eur">0€</span><span class="price-bgn">0 лв.</span></span>
+                </div>
+                <p>Виното ще бъде добавено след предоставяне на реалната винена листа.</p>
+            </div>
+
+            <div class="menu-row">
+                <div class="menu-row-top">
+                    <h4><span class="tag">Очаква меню</span> Артикул от винената листа</h4>
+                    <span class="menu-price"><span class="price-eur">0€</span><span class="price-bgn">0 лв.</span></span>
+                </div>
+                <p>Виното ще бъде добавено след предоставяне на реалната винена листа.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ГАЛЕРИЯ — asymmetric masonry -->
+<section class="section alt" id="gallery">
+    <div class="container">
+
+        <h2 class="reveal">Галерия</h2>
+        <p class="section-lead reveal">
+            Реални снимки на градината, терасата и ястията ще заменят
+            placeholder-ите по-долу.
+        </p>
+
+        <div class="gallery-grid">
+
+            <figure class="gallery-item reveal">
+                <img src="images/gallery-dish-fish-plate.jpg" alt="Фина рибна чиния с изящна гарнитура — фина кухня в Тополите" loading="lazy">
+            </figure>
+
+            <figure class="gallery-item reveal">
+                <img src="images/gallery-garden-table-set.jpg" alt="Подредена маса в градината с бяла покривка и винена бъчва на заден план" loading="lazy">
+            </figure>
+
+            <figure class="gallery-item reveal">
+                <img src="images/gallery-celebration-table.jpg" alt="Дълга маса, подредена за празненство, с бутилки вино и предястия" loading="lazy">
+            </figure>
+
+            <figure class="gallery-item reveal">
+                <img src="images/gallery-garden-barrel-detail.jpg" alt="Декоративна винена бъчва сред цветя и жив плет в градината" loading="lazy">
+            </figure>
+
+            <figure class="gallery-item reveal">
+                <img src="images/gallery-dish-filet-wine.jpg" alt="Телешко филе с аспержи и картофено пюре, до чаша червено вино" loading="lazy">
+            </figure>
+
+            <figure class="gallery-item reveal">
+                <img src="images/gallery-wine-wall.jpg" alt="Стена от рафтове с подредени бутилки вино в избата на Тополите" loading="lazy">
+            </figure>
+
+            <figure class="gallery-item reveal">
+                <img src="images/gallery-dish-appetizer-flower.jpg" alt="Ред предястия, украсени с ядливо цвете, подредени за сервиране" loading="lazy">
+            </figure>
+
+            <figure class="gallery-item reveal">
+                <img src="images/gallery-garden-wide.jpg" alt="Слънчева градина на Тополите с маси, столове и декоративна винена бъчва" loading="lazy">
+            </figure>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ЗА НАС -->
+<!-- Draft copy — за преглед и замяна с реалната история на заведението -->
+<section class="section" id="about">
+    <div class="container about-grid">
+
+        <div class="about-text reveal">
+            <span class="tag">Чернова — за одобрение</span>
+            <h2>За заведението</h2>
+            <p>
+                Тополите е градинско заведение, замислено за вечери, които
+                минават бавно — сред дървета, топла светлина и внимателно
+                поднесени ястия. Място за гости, които търсят спокойствие
+                и добра кухня, а не забързан ресторантски ритъм. Винената ни
+                листа е подбирана със същото внимание, като част от
+                идентичността на мястото — не просто добавка към менюто.
+            </p>
+        </div>
+
+        <figure class="about-photo reveal">
+            <img
+                src="images/interior-dining-evening.jpg"
+                alt="Уютна вечерна зала на ресторант Тополите с подредени маси и топла светлина"
+                loading="lazy"
+            >
+        </figure>
+
+    </div>
+</section>
+
+
+<!-- КОНТАКТИ -->
+<section class="section alt" id="contact">
+    <div class="container contact-grid">
+
+        <div class="contact-info reveal">
+            <h2>Контакти</h2>
+            <span class="tag">Данните предстои да бъдат потвърдени</span>
+
+            <div class="contact-item">
+                <span class="contact-label">Адрес</span>
+                <p>[Адрес на заведението]</p>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-label">Телефон</span>
+                <p>[Телефон за резервации]</p>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-label">Работно време</span>
+                <p>[Работно време]</p>
+            </div>
+        </div>
+
+        <div class="booking-panel reveal">
+            <h3>Резервирай маса</h3>
+
+            <!-- Placeholder for a future online reservation system -->
+            <div class="reservation-placeholder">
+                <span class="calendar-icon" aria-hidden="true">
+                    <span class="calendar-icon-top"></span>
+                </span>
+                <p>Тук ще бъде интегрирана система за онлайн резервации</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+
+<footer class="footer">
+    <div class="container footer-grid">
+
+        <a href="#hero" class="logo">Тополите</a>
+
+        <nav class="footer-nav" aria-label="Долна навигация">
+            <a href="#menu">Меню</a>
+            <a href="#gallery">Галерия</a>
+            <a href="#about">За нас</a>
+            <a href="#contact">Контакти</a>
+        </nav>
+
+        <p class="footer-note">
+            &copy; <span id="year"></span> Тополите — Speculative redesign / pitch demo от WetBuild.
+        </p>
+
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
